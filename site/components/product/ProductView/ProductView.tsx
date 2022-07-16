@@ -25,6 +25,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
   return (
     <>
       <Container className="max-w-none w-full" clean>
+        --- ProductView ---
         <div className={cn(s.root, 'fit')}>
           <div className={cn(s.main, 'fit')}>
             <ProductTag
@@ -64,7 +65,9 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
             className={s.sidebar}
           />
         </div>
+        --- /ProductView ---
         <hr className="mt-7 border-accent-2" />
+        --- ProductView - Related Products ---
         <section className="py-12 px-6 mb-10">
           <Text variant="sectionHeading">Related Products</Text>
           <div className={s.relatedProductsGrid}>
@@ -88,6 +91,7 @@ const ProductView: FC<ProductViewProps> = ({ product, relatedProducts }) => {
             ))}
           </div>
         </section>
+        --- /ProductView - Related Products ---
       </Container>
       <SEO
         title={product.name}

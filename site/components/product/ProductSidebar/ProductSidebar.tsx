@@ -43,6 +43,7 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
 
   return (
     <div className={className}>
+      --- ProductView - Sidebar ---
       <ProductOptions
         options={product.options}
         selectedOptions={selectedOptions}
@@ -73,6 +74,7 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
         )}
       </div>
       <div className="mt-6">
+        --- ProductView - Accordion ---
         <Collapse title="Care">
           This is a limited edition production run. Printing starts when the
           drop ends.
@@ -82,7 +84,9 @@ const ProductSidebar: FC<ProductSidebarProps> = ({ product, className }) => {
           drop ends. Reminder: Bad Boys For Life. Shipping may take 10+ days due
           to COVID-19.
         </Collapse>
+        --- /ProductView - Accordion ---
       </div>
+      --- /ProductView - Sidebar ---
     </div>
   )
 }
